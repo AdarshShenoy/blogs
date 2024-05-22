@@ -1,11 +1,38 @@
 
-   /* background-image: url("https://www.deserres.ca/cdn/shop/articles/atelier_7mars2023_cover_2d180245-a59a-4bf1-af61-eaabf1694037.jpg?v=1675873034&width=1080");*/
+   /* background-image: url("https://img.freepik.com/free-photo/makeup-brush-eyeglasses-cactus-plant-white-flower-bouquet-with-laptop-blue-background_23-2148178672.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1714867200&semt=ais");*/
 
 body{
     height: 90vh;
-    background-image: url("https://img.freepik.com/free-photo/makeup-brush-eyeglasses-cactus-plant-white-flower-bouquet-with-laptop-blue-background_23-2148178672.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1714867200&semt=ais");
+    background-image: url("https://www.deserres.ca/cdn/shop/articles/atelier_7mars2023_cover_2d180245-a59a-4bf1-af61-eaabf1694037.jpg?v=1675873034&width=1080");
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center; 
     
+}
+
+#email{
+    border-radius:500px;
+}
+#password{
+    border-radius: 500px;
+}
+ 
+.container{
+    padding-top: 9%;
+   
+}
+.box{
+    border-radius: 20px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px;
+    color: #221c1c;
+    padding: 1.5%;
+   
+}
+.btn{
+    background-color: teal;
+    color: aliceblue;
+    border: none;
 }

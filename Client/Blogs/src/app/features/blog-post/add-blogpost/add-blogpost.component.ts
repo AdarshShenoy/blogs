@@ -53,6 +53,7 @@ export class AddBlogpostComponent implements OnInit, OnDestroy {
     this.blogPostService.createBlogPost(this.model)
     .subscribe({
       next: (response) => {
+        console.log(response);
         this.router.navigateByUrl('/admin/blogposts');
       }
     });

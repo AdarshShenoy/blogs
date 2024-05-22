@@ -6,8 +6,8 @@
                 class="img-fluid">
                 <h1 class="mt-4">{{blogPost.title}}</h1>
                 <div class="d-flex justify-content-between mt-4">
-                    <span>{{blogPost.author}}</span>
-                    <span>{{blogPost.publishedDate | date: 'dd-MM-yyyy'}}</span>
+                    <span>👤{{blogPost.author}}</span>
+                    <span>📆{{blogPost.publishedDate | date: 'dd-MM-yyyy'}}</span>
                 </div>
                 <div *ngIf="blogPost.categories" class="mt-4">
                     <span class="badge bg-secondary me-2" *ngFor="let category of blogPost.categories">

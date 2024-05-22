@@ -26,7 +26,7 @@ namespace CodePulse.API.Controllers
         [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request)
         {
-            // Convert DTO to DOmain
+            // Convert DTO to Domain
             var blogPost = new BlogPost
             {
                 Author = request.Author,
@@ -204,7 +204,6 @@ namespace CodePulse.API.Controllers
                 Categories = new List<Category>()
             };
 
-            // Foreach 
             foreach (var categoryGuid in request.Categories)
             {
                 var existingCategory = await categoryRepository.GetById(categoryGuid);

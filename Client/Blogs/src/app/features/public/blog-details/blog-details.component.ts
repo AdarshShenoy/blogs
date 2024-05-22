@@ -22,6 +22,7 @@ export class BlogDetailsComponent implements OnInit {
     this.route.paramMap
     .subscribe({
       next: (params) => {
+        console.log(params);
         this.url = params.get('url');
       }
     })

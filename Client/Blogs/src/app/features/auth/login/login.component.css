@@ -6,3 +6,29 @@ body{
     background-position: center center; 
     
 }
+#email{
+    border-radius:500px;
+}
+#password{
+    border-radius: 500px;
+}
+ 
+.container{
+    padding-top: 9%;
+   
+}
+.box{
+    border-radius: 20px;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px;
+    color: #221c1c;
+    padding: 1.5%;
+   
+}
+.btn{
+    background-color: teal;
+    color: aliceblue;
+    border: none;
+}

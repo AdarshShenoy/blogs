@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { authGuard } from './features/auth/guards/auth.guard';
 import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
@@ -16,12 +17,12 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'blog/:url', component: BlogDetailsComponent},
-  {path: 'admin/categories', component: CategoryListComponent},
-  {path: 'admin/categories/add', component: AddCategoryComponent},
-  {path: 'admin/categories/:id', component: EditCategoryComponent},
-  {path: 'admin/blogposts', component: BlogpostListComponent},
-  {path: 'admin/blogposts/add', component: AddBlogpostComponent},
-  {path: 'admin/blogposts/:id', component: EditBlogpostComponent},
+  {path: 'admin/categories', component: CategoryListComponent, canActivate: [authGuard]},
+  {path: 'admin/categories/add', component: AddCategoryComponent, canActivate: [authGuard]},
+  {path: 'admin/categories/:id', component: EditCategoryComponent, canActivate: [authGuard]},
+  {path: 'admin/blogposts', component: BlogpostListComponent, canActivate: [authGuard]},
+  {path: 'admin/blogposts/add', component: AddBlogpostComponent, canActivate: [authGuard]},
+  {path: 'admin/blogposts/:id', component: EditBlogpostComponent, canActivate: [authGuard]},
   
 ];
 
